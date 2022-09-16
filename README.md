@@ -38,3 +38,12 @@ public void add(Object obj, int position) {
 
 }
 ```
+
+# Note
+
+Remember that a `Node` and `Object` are two different things: in our case, every `Node` contains an item (type `Object`) and a reference to another `Node`. So, to return the item (object) from the `LinkedList`, you 
+
+1. find the Node which has an item that equals to the object you are looking for, then
+2. you save that item in a temporary variable of type `Object`,
+3. remove the found `Node` from the `LinkedList` by changing the `next` references accordingly, and finally
+4. return that temporary variable where you saved the found object.
