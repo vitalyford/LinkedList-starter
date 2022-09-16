@@ -1,3 +1,4 @@
+// Lesson learned: do not bluntly trust GitHub Copilot
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
