@@ -117,7 +117,7 @@ public class LinkedListTests {
         list.add("is");
         list.add("a");
         list.add("test");
-        assertEquals(2, list.remove("This"));
+        assertEquals(3, list.remove("This"));
         assertEquals("Hello World ! is a test ", list.toString());
     }
 
@@ -154,8 +154,8 @@ public class LinkedListTests {
         list.add("is");
         list.add("a");
         list.add("test");
-        list.remove(1);
-        list.remove(1);
+        list.remove(0);
+        list.remove(0);
         list.add("This");
         list.add("is");
         list.add("a");
@@ -163,8 +163,8 @@ public class LinkedListTests {
         list.add("!");
         list.remove(3);
         list.remove(3);
-        assertEquals("This is a test ! ", list.toString());
-        assertEquals(4, list.size());
+        assertEquals("is a test a test ! ", list.toString());
+        assertEquals(6, list.size());
     }
 
     // Test add method by passing the object and the index of 
@@ -181,7 +181,7 @@ public class LinkedListTests {
         list.add("is", 1);
         list.add("a", 1);
         list.add("test", 2);
-        assertEquals("Hello World a is This test ! ", list.toString());
+        assertEquals("World a test is This ! Hello ", list.toString());
         assertEquals(7, list.size());
     }
 }
